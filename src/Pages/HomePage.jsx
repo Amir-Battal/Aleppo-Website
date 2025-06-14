@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger, SplitText } from 'gsap/all'
 import '../App.css'
@@ -10,15 +10,14 @@ import AleppoInLines from '../Components/AleppoInLines'
 import TouristPlacesComponent from '../Components/TouristPlacesComponent'
 import Governors from '../Components/Governors'
 import Contact from '../Components/Contact'
-
-
-
+import Loader from '../Components/Loader' // أضف هذا
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(SplitText);
 
 const HomePage = () => {
-  
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     const hash = window.location.hash;
     if (hash) {
@@ -29,25 +28,26 @@ const HomePage = () => {
         }, 500);
       }
     }
-  }, [])
+
+    // تحميل مؤقت للصفحة (مثلاً يمكن ربطه بتحميل صور مستقبلًا)
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // أو 1000ms
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (isLoading) return <Loader />;
 
   return (
     <div dir='rtl' className='w-full overflow-hidden'>
-
       <Hero />
-
       <WelcomLetter />
-
       <Regions />
-
       <AleppoInLines />
-
       <TouristPlacesComponent />
-
       <Governors />
-
       <Contact />
-
       <Footer />
     </div>
   );
