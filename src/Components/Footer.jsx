@@ -96,7 +96,7 @@ const Footer = () => {
                     )}
                   </li>
                 </ul>
-                <ul className="flex flex-col text-[18px]">
+                <ul className="w-[60%] flex flex-col text-[18px]">
                   <li>
                     {isTourist ? (
                       <a href="#section-4" onClick={(e) => handleSmoothScroll(e, 'section-4')} className="hover:text-[#d5d0b4]">بعض الأماكن الدينيــــة الجزء الأول</a>
