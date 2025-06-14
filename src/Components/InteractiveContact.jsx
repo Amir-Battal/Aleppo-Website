@@ -40,7 +40,7 @@ const InteractiveContact = () => {
     <section className="relative h-[800px] bg-[#F3EDCD] pt-20 text-[#171717] flex flex-col sm:items-center md:items-start lg:items-start justify-start px-4 z-10 overflow-hidden">
 
       {/* المحتوى التفاعلي */}
-      <h1 className="text-[120px] font-bold mb-10 z-10">تواصــــل معنــــا</h1>
+      <h1 className="text-[60px] lg:md:sm:text-[120px] font-bold mb-10 z-10">تواصــــل معنــــا</h1>
 
       <form onSubmit={handleSubmit} className="w-full max-w-xl space-y-6 z-10">
         {step === 0 && (
@@ -98,7 +98,7 @@ const InteractiveContact = () => {
               rows="4"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-                className="w-full p-3 bg-[#cfcbb0] border-b-2 border-[#777F53] text-black"
+                className="w-full p-3 bg-[#cfcbb0] border-b-2 border-[#777F53] text-black z-5"
             />
           </div>
         )}
@@ -106,7 +106,7 @@ const InteractiveContact = () => {
         {step >= 2 && (
           <button
             type="submit"
-            className="bg-[#777F53] text-[#F3F1F3] w-full text-[20px] hover:bg-[#697049] transition p-3 cursor-pointer"
+            className="bg-[#777F53] text-[#F3F1F3] w-full text-[20px] hover:bg-[#697049] transition p-3 cursor-pointer z-99"
           >
             إرسال
           </button>
@@ -114,8 +114,8 @@ const InteractiveContact = () => {
       </form>
 
       {/* الصورة التوضيحية */}
-      <div className='w-full flex justify-center z-10 absolute'>
-        <img className='w-[60%] sm:mt-[50%] md:mt-[30%] lg:mt-[-5%] ml-[-40%] absolute' src={AleppoIllustration} alt="" />
+      <div className='w-full flex justify-center z-0 absolute'>
+        <img className='lg:md:sm:w-[60%] w-[100%] mt-[75%] ml-[8%] sm:mt-[50%] md:mt-[30%] lg:mt-[-5%] lg:md:sm:ml-[-40%] absolute z-0' src={AleppoIllustration} alt="" />
       </div>
     </section>
   );

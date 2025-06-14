@@ -32,7 +32,7 @@ const HomePage = () => {
     // تحميل مؤقت للصفحة (مثلاً يمكن ربطه بتحميل صور مستقبلًا)
     const timeout = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // أو 1000ms
+    }, 1000); // أو 1000ms
 
     return () => clearTimeout(timeout);
   }, []);

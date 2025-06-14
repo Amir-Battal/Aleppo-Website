@@ -55,7 +55,7 @@ const CombinedCard = ({...props}) => {
 
   return (
     <StyledWrapper>
-      <div className="flip-card sm:w-[160%] sm:h-[400px] md:w-[170%] md:h-[520px] lg:w-full lg:h-[520px]" onClick={handleClick}>
+      <div className="flip-card w-[240%] h-[400px] sm:w-[160%] sm:h-[400px] md:w-[170%] md:h-[520px] lg:w-full lg:h-[520px]" onClick={handleClick}>
         <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
           <div
             className="flip-card-front"
@@ -70,25 +70,26 @@ const CombinedCard = ({...props}) => {
             <div className="corner bottom-left" />
             <div className="corner top-right" />
             <div className="corner bottom-right" />
-            <div className="card-content">
-              <img src={props.image} alt="" />
+            <div className="card-content flex flex-col items-center">
+              <img className='h-[400px] object-cover lg:md:sm:object-contain lg:md:sm:h-auto' src={props.image} alt="" />
+              <h1 className="text-4xl mt-[110%]  lg:md:sm:mt-[100%] sm:text-4xl md:text-5xl lg:text-5xl text-center absolute text-[#171717] z-4">{cardData?.title || 'لا يوجد عنوان'}</h1>
             </div>
           </div>
           <div className="flip-card-back flex flex-col gap-5 pt-5">
-            <p className="sm:text-5xl md:text-5xl lg:text-6xl text-center">{cardData?.title || 'لا يوجد عنوان'}</p>
-            <div className="w-full h-[4px] bg-black" />
-            <div className={`sm:text-[13px] md:text-[15px] lg:text-[16px] font-medium ${cardData.id === 4 ? 'text-center' : cardData.id === 5 ? 'text-start' : 'text-center' } px-5`} style={{ fontFamily: 'Readex-Pro' }}>
+            <p className="text-[#F3EDCD] text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-center">{cardData?.title || 'لا يوجد عنوان'}</p>
+            <div className="w-full h-[4px] bg-[#F3EDCD]" />
+            <div className={`text-[14px] text-[#F3EDCD] sm:text-[13px] md:text-[15px] lg:text-[16px] font-medium ${cardData.id === 4 ? 'text-center text-[#F3EDCD]' : cardData.id === 5 ? 'text-start' : 'text-center text-[#F3EDCD]' } px-5`} style={{ fontFamily: 'Readex-Pro' }}>
               {Array.isArray(cardData?.content) ? (
                 cardData.content.map((line, idx) => (
                   <p key={idx}>{line}</p>
                 ))
               ) : (
-                <p className={`${cardData.id === 4 ? 'comingSoon font-bold sm:text-[120px]/20 md:text-[150px]/25 lg:text-[170px]/30 mt-15' : ''}`}>
+                <p className={`${cardData.id === 4 ? 'comingSoon font-bold text-[40px] text-[#F3EDCD] sm:text-[120px]/20 md:text-[150px]/25 lg:text-[170px]/30 mt-15' : 'text-[#F3EDCD]'}`}>
                   {cardData?.content || 'لا يوجد محتوى'}
                 </p>
               )}
             </div>
-            {cardData.author && <p className="sm:text-2xl md:text-3xl lg:text-3xl text-center">"{cardData?.author}"</p>}
+            {cardData.author && <p className="text-[#F3EDCD] sm:text-2xl md:text-3xl lg:text-3xl text-center">"{cardData?.author}"</p>}
             { (cardData.images) && (window.innerWidth >= 768) && (
               <div dir='ltr' className="carousel h-[170px] flex justify-center mt-5">
                 <button className="nav-btn left bg-[#F3EDCD] cursor-pointer hover:bg-[#dad5b8]" onClick={prevImage} aria-label="السابق">
@@ -185,7 +186,7 @@ const StyledWrapper = styled.div`
   }
 
   .flip-card-back {
-    background: #dbad4f;
+    background: #886128;
     transform: rotateY(180deg);
   }
 

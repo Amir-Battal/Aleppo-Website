@@ -109,7 +109,7 @@ const HorizontalAccordion = ({ data, title }) => {
 
   return (
     <div className="mt-20 mb-10">
-      <h2 ref={titleRef} className="sm:text-[70px] md:text-[80px] lg:text-[100px] my-20 text-center">{title}</h2>
+      <h2 ref={titleRef} className="text-[40px] sm:text-[70px] md:text-[80px] lg:text-[100px] my-20 text-center">{title}</h2>
 
       <div className="flex overflow-hidden">
         {data.map((place) => {
@@ -131,8 +131,8 @@ const HorizontalAccordion = ({ data, title }) => {
                 }
               }}
               className={`relative transition-all duration-500 ease-in-out ${
-                isSelected ? "sm:w-[60vw] md:w-[70vw] lg:w-[80vw]" : "sm:w-[9vw] md:w-[5.05vw] lg:w-[5.05vw] cursor-pointer"
-              } sm:h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden`}
+                isSelected ? "w-[60vw] sm:w-[60vw] md:w-[70vw] lg:w-[80vw]" : "w-[9vw] sm:w-[9vw] md:w-[5.05vw] lg:w-[5.05vw] cursor-pointer"
+              } h-[50vh] sm:h-[50vh] md:h-[60vh] lg:h-[80vh] overflow-hidden`}
               style={{
                 backgroundColor: place.color,
                 color: place.textColor,
@@ -144,8 +144,8 @@ const HorizontalAccordion = ({ data, title }) => {
               <h3
                 className={`font-bold absolute z-10 ${
                   isSelected
-                    ? "sm:text-[50px] md:text-[60px] lg:text-[80px] top-5 right-10 rotate-0 text-shadow-lg/20"
-                    : "text-[30px] -rotate-90 w-[80vh] mt-[40vh] sm:mr-[-37.2vh] md:mr-[-38vh] lg:mr-[-36.5vh]"
+                    ? "text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px] top-5 right-10 rotate-0 text-shadow-lg/20"
+                    : "text-[20px] lg:md:sm:text-[30px] -rotate-90 w-[80vh] mt-[40vh] mr-[-38.5vh] sm:mr-[-37.2vh] md:mr-[-38vh] lg:mr-[-36.5vh]"
                 }`}
               >
                 {place.title}
@@ -168,16 +168,16 @@ const HorizontalAccordion = ({ data, title }) => {
                     }`}
                   >
                     <MapPin />
-                    <span className="sm:text-xl md:text-xl lg:text-xl">{place.location}</span>
+                    <span className="text-md sm:text-xl md:text-xl lg:text-xl">{place.location}</span>
                   </a>
                   {place.phone && (
                     <div
-                      className={`flex items-center gap-3 transition-opacity duration-300 ${
+                      className={`flex items-center gap-3 mt-2 transition-opacity duration-300 ${
                         shouldShowContent ? "opacity-100" : "opacity-0"
                       }`}
                     >
                       <Phone />
-                      <span dir="ltr" className="text-xl">{place.phone}</span>
+                      <span dir="ltr" className="text-md lg:md:sm:text-xl">{place.phone}</span>
                     </div>
                   )}
                 </div>
@@ -242,19 +242,19 @@ const TouristPlaces = () => {
           <h3>العودة إلى الصفحة الرئيسية</h3>
           <ChevronLeft />
         </Link>
-        <a className='w-[18%] sm:mt-[5%] md:mt-[3%] lg:mt-[0%] flex justify-end z-1' href="/">
+        <a className='w-[30%] lg:md:sm:w-[18%] sm:mt-[5%] md:mt-[3%] lg:mt-[0%] flex justify-end z-1' href="/">
           <img className='w-full lg:mt-[10%] ml-[15%] sm:mt-[-5%]' src={AleppoLogo} alt="" />
         </a>
       </div>
 
       <div className="flex flex-col gap-6">
-        <div className="flex flex-col">
-          <h1 className="sm:text-[60px] md:text-[90px] lg:text-[100px] mt-30 text-center">بعض الأماكن السياحيــــة في مدينة حلــــب</h1>
-          <h3 className="text-end sm:text-[20px] md:text-[30px] lg:text-[40px] ml-[10%]">قم بالضغط على اسم المكان لمعرفة المزيد عنه</h3>
+        <div className="flex flex-col px-5">
+          <h1 className="text-[50px] sm:text-[60px] md:text-[90px] lg:text-[100px] mt-30 text-center">بعض الأماكن السياحيــــة في مدينة حلــــب</h1>
+          <h3 className="text-start text-[20px] sm:text-[20px] md:text-[30px] lg:text-[40px] ml-[10%]">قم بالضغط على اسم المكان لمعرفة المزيد عنه</h3>
         </div>
         <div className="flex flex-col gap-0">
           <h3 className="text-start sm:text-[25px] md:text-[30px] lg:text-[40px] mr-[3%]">الأقسام ضمن هذه الصفحة</h3>
-          <div className="flex flex-row gap-2 sm:text-[20px] md:text-[25px] lg:text-[25px] md:mx-10 lg:mx-10 mt-5 justify-between">
+          <div className="grid grid-cols-2 lg:md:sm:flex lg:md:sm:flex-row gap-2 sm:text-[20px] md:text-[25px] lg:text-[25px] md:mx-10 lg:mx-10 mt-5 justify-between">
             {titles.map((title, i) => (
               <button
                 key={i}

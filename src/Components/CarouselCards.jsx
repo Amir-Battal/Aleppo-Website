@@ -87,7 +87,7 @@ const CarouselCards = () => {
   return (
     <StyledWrapper>
       <div
-        className="card-3d"
+        className="card-3d w-[100%] h-[300px]"
         style={{ transform: `perspective(1000px) rotateY(${rotation}deg)` }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -103,7 +103,7 @@ const CarouselCards = () => {
           return (
             <div
               key={place.id}
-              className={`tourist-card ${isActive ? 'active' : ''}`}
+              className={`tourist-card w-[200px] h-[200px] lg:md:sm:w-[250px] lg:md:sm:h-[250px] ${isActive ? 'active' : ''}`}
               style={{
                 transform: `translate(-50%, -50%) rotateY(${cardAngle}deg) translateZ(500px)`,
                 backgroundImage: `url(${place.image})`,
@@ -126,8 +126,6 @@ const CarouselCards = () => {
 const StyledWrapper = styled.div`
   .card-3d {
     position: relative;
-    width: 100%;
-    height: 300px;
     margin: 0 auto;
     margin-top: 200px;
     transform-style: preserve-3d;
@@ -142,8 +140,6 @@ const StyledWrapper = styled.div`
 
   .tourist-card {
     position: absolute;
-    width: 250px;
-    height: 250px;
     top: 50%;
     left: 50%;
     background-size: cover;

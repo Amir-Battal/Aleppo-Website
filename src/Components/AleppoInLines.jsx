@@ -134,39 +134,39 @@ const AleppoInLines = () => {
 
 
   return (
-    <section id='aleppoInLines' className="h-[2500px] text-black flex justify-center pt-10">
+    <section id='aleppoInLines' className="h-[3600px] lg:md:sm:h-[2500px] text-black flex justify-center pt-10">
       <div className='flex flex-col'>
-        <h1 ref={aleppoInLinesTitleRef} className="sm:text-[100px] md:text-[120px] lg:text-[200px] opacity-0 translate-y-[100px]">
+        <h1 ref={aleppoInLinesTitleRef} className="text-[60px] px-4 lg:md:sm:px-0 sm:text-[100px] md:text-[120px] lg:text-[200px] opacity-0 translate-y-[100px]">
           حلــــــــب فــــي سطــــــــور
         </h1>
-        <h3 className='text-[30px]'>قم بالضغط على البطاقة لمعرفة المزيد عن حلــــــب</h3>
+        <h3 className='text-[22px] mr-[4%] lg:md:sm:mr-0 lg:md:sm:text-[30px]'>قم بالضغط على البطاقة لمعرفة المزيد عن حلــــــب</h3>
         
         <div ref={flipCardsRef} className="relative w-full flex justify-center items-start my-20 overflow-visible min-h-[600px]">
 
           {/* البطاقة المركزية (ثابتة في الوسط) */}
-          <div className="w-[30%] flex flex-col z-20 sm:ml-[68%] md:ml-[70%] lg:ml-[0%]" ref={centerCardRef}>
+          <div className="w-[30%] flex flex-col gap-110 mt-[120%] lg:md:sm:mt-0 lg:md:sm:gap-0 z-20 ml-[60%] sm:ml-[68%] md:ml-[70%] lg:ml-[0%]" ref={centerCardRef}>
             <FlipCard image={Gif1} id={1} />
             <FlipCard image={Gif1} id={5} />
             <FlipCard image={Gif1} id={4} />
           </div>
 
           {/* البطاقة اليسرى */}
-          <div ref={leftCardRef} className="absolute w-[30%] sm:mt-[-20%] sm:ml-[-34%]  md:mt-[-20%] md:ml-[-40%] lg:mt-[0%] lg:ml-[10%]">
+          <div ref={leftCardRef} className="absolute w-[30%] ml-[20%] sm:mt-[-20%] sm:ml-[-34%]  md:mt-[-20%] md:ml-[-40%] lg:mt-[0%] lg:ml-[10%]">
             <FlipCard image={Gif1} id={2} />
           </div>
 
           {/* البطاقة اليمنى */}
-          <div ref={rightCardRef} className="absolute w-[30%] sm:mt-[60%] sm:ml-[-34%] md:mt-[60%] md:ml-[-40%] lg:mt-[0%] lg:ml-[-10%]">
+          <div ref={rightCardRef} className="absolute w-[30%] mt-[235%] ml-[20%] sm:mt-[60%] sm:ml-[-34%] md:mt-[60%] md:ml-[-40%] lg:mt-[0%] lg:ml-[-10%]">
             <FlipCard image={Gif1} id={3} />
           </div>
 
           {/* البطاقة اليسرى الإضافية */}
-          <div ref={leftCardExtraRef} className="absolute w-[30%] sm:mt-[138%] sm:ml-[-34%] md:mt-[140%] md:ml-[-40%] lg:mt-[0%] lg:ml-[10%]">
+          <div ref={leftCardExtraRef} className="absolute w-[30%] mt-[460%] ml-[20%] sm:mt-[138%] sm:ml-[-34%] md:mt-[140%] md:ml-[-40%] lg:mt-[0%] lg:ml-[10%]">
             <FlipCard image={Gif1} id={6} />
           </div>
 
           {/* البطاقة اليمنى الإضافية */}
-          <div ref={rightCardExtraRef} className="absolute w-[30%] sm:mt-[215%] sm:ml-[-34%] md:mt-[220%] md:ml-[-40%] lg:mt-[0%] lg:ml-[-10%]">
+          <div ref={rightCardExtraRef} className="absolute w-[30%] mt-[690%] ml-[20%] sm:mt-[215%] sm:ml-[-34%] md:mt-[220%] md:ml-[-40%] lg:mt-[0%] lg:ml-[-10%]">
             <FlipCard image={Gif1} id={7} />
           </div>
         </div>

@@ -12,7 +12,7 @@ import EinArab from '../Components/AleppoMap/EinArab'
 const AleppoMap = ({selectedRegion, setSelectedRegion}) => {
 
   return (
-    <div>
+    <div className='mt-[-80%] sm:mt-[0%] md:mt-[0%] lg:mt-[0%]'>
       <Efrin setSelectedRegion={setSelectedRegion} selectedRegion={selectedRegion} />
       <Atarb setSelectedRegion={setSelectedRegion} selectedRegion={selectedRegion} />
       <Azzaz setSelectedRegion={setSelectedRegion} selectedRegion={selectedRegion} />

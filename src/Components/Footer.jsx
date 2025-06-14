@@ -18,12 +18,12 @@ const Footer = () => {
   const isTourist = pathname === '/tourist-places';
 
   return (
-    <footer className='w-full sm:h-[450px] md:h-[300px] lg:h-[300px] bg-[#777F53] text-[#F3EDCD] flex flex-col px-20 pt-5'>
-      <div className='w-full flex sm:flex-col md:flex-row lg:flex-row justify-between'>
-        <div className="sm:w-full md:w-[80%] lg:w-[50%]">
+    <footer className='w-full sm:h-[450px] md:h-[300px] lg:h-[300px] bg-[#777F53] text-[#F3EDCD] flex flex-col gap-5 lg:md:sm:gap-0 px-5 lg:md:sm:px-20 pt-5'>
+      <div className='w-full flex flex-col gap-5 lg:md:sm:gap-0 sm:flex-col md:flex-row lg:flex-row justify-between'>
+        <div className="w-full sm:w-full md:w-[80%] lg:w-[50%]">
           <h3 className="text-[30px]">أقسام الموقع</h3>
-          <div className="w-full flex flex-row sm:gap-5 md:gap-0 lg:gap-0 justify-between">
-            <div className="sm:w-[50%] flex flex-col gap-2">
+          <div className="w-full flex flex-row gap-5 sm:gap-5 md:gap-0 lg:gap-0 justify-between">
+            <div className="w-[50%] sm:w-[50%] flex flex-col gap-2">
               <h3 className="text-[25px]">الصفحة الرئيسية</h3>
               <ul className="text-[18px]">
                 <li>
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-[25px]">صفحة الأماكن السياحية</h3>
-              <div className="flex flex-row justify-between gap-10">
+              <div className=" flex flex-row justify-between gap-10">
                 <ul className="flex flex-col text-[18px]">
                   <li>
                     {isTourist ? (
@@ -124,12 +124,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="sm:w-full md:w-[20%] lg:w-[50%] flex sm:flex-col md:flex-col lg:flex-col gap-5 md:pr-[5%] lg:pr-[20%]">
-          <h3 className="sm:w-[30%] text-[30px]">تواجدنا الرقمي</h3>
-          <div className="sm:w-[50%] flex flex-row gap-5">
-            <a className="sm:w-[20%] md:w-[40%] lg:w-[15%]" target="_blank" href="https://t.me/AleppoGov1">
+          <h3 className="w-[60%] sm:w-[30%] text-[30px]">تواجدنا الرقمي</h3>
+          <div className="w-[100%] sm:w-[50%] flex flex-row gap-5">
+            <a className="w-[20%] sm:w-[20%] md:w-[40%] lg:w-[15%]" target="_blank" href="https://t.me/AleppoGov1">
               <TelegramIcon />
             </a>
-            <a className="sm:w-[20%] md:w-[40%] lg:w-[15%]" target="_blank" href="https://www.facebook.com/AleppoGov1">
+            <a className="w-[20%] sm:w-[20%] md:w-[40%] lg:w-[15%]" target="_blank" href="https://www.facebook.com/AleppoGov1">
               <FacebookIcon />
             </a>
           </div>
