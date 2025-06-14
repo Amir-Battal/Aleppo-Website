@@ -152,7 +152,7 @@ const HorizontalAccordion = ({ data, title }) => {
               </h3>
 
               {isSelected && (
-                <div className="absolute bottom-0 w-full sm:h-[55%] md:h-[30%] lg:h-[30%] bg-black/60 text-white p-6 z-10 flex flex-col justify-between transition-opacity duration-300 ease-in-out">
+                <div className="absolute bottom-0 w-full sm:h-[55%] md:h-[30%] lg:h-[35%] bg-black/60 text-white p-6 z-10 flex flex-col justify-between transition-opacity duration-300 ease-in-out">
                   <p
                     className={`sm:text-[30px] md:text-[25px] lg:text-[50px] font-light leading-snug transition-opacity duration-300 ${
                       shouldShowContent ? "opacity-100" : "opacity-0"
