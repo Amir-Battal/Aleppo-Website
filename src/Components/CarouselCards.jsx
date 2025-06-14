@@ -103,7 +103,7 @@ const CarouselCards = () => {
           return (
             <div
               key={place.id}
-              className={`tourist-card w-[200px] h-[200px] lg:md:sm:w-[250px] lg:md:sm:h-[250px] ${isActive ? 'active' : ''}`}
+              className={`tourist-card w-[150px] h-[150px] lg:md:sm:w-[250px] lg:md:sm:h-[250px] ${isActive ? 'active' : ''}`}
               style={{
                 transform: `translate(-50%, -50%) rotateY(${cardAngle}deg) translateZ(500px)`,
                 backgroundImage: `url(${place.image})`,

@@ -53,7 +53,7 @@ const Card = ({ region }) => {
 
   return (
     <StyledWrapper>
-      <div className={`card w-[100%] h-[900px] lg:md:sm:h-[820px] ${isFlipped ? 'flipped' : ''}`}>
+      <div className={`card w-[100%] h-[950px] lg:md:sm:h-[820px] ${isFlipped ? 'flipped' : ''}`}>
         <div className="content flex w-full ">
           {matchedRegionData && showContent ? (
             <div className='w-full flex flex-col gap-1'>
