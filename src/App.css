@@ -1,0 +1,37 @@
+body {
+  overscroll-behavior: none;
+  height: 100vh;
+  background-color: #F3EDCD;
+  font-family: 'AlSharkTitle-Bold';
+}
+
+
+.word {
+  outline: 1px dashed black;
+  border-radius: 10px;
+}
+
+
+.container {
+  background-color: #F3EDCD;
+  overscroll-behavior: none;
+  width: 600%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-in-out;
+}

@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "AlSharkTitle-Bold";
+  src: url('./assets/Fonts/AlSharkTitle/AlSharkTitle-Bold.otf');
+}
+
+@font-face {
+  font-family: "Readex-Pro";
+  src: url('./assets/Fonts/Readex_Pro/ReadexPro.ttf');
+}
+
+@font-face {
+  font-family: "Jomhuria";
+  src: url('./assets//Fonts/Jomhuria-Regular.ttf');
+}
+
