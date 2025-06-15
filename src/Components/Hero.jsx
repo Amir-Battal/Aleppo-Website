@@ -73,7 +73,7 @@ const Hero = () => {
           <div className='flex flex-col items-start'>
             <h1 className='text-[375px] sm:text-[600px] md:text-[600px] lg:text-[570px] mt-[-5%] sm:mt-[-350px] md:mt-[-350px] lg:mt-[-350px] text-[#171717]'>حــلــــــــــــــــــــــــــــــــــــــــــــــــــــــب</h1>
 
-            <div className="absolute flex flex-row justify-between w-[85%] mr-[10%] top-[47%] sm:top-[27%] md:top-[36%] lg:top-[41%]">
+            <div className="absolute flex flex-row justify-between w-[85%] mr-[10%] top-[42%] sm:top-[27%] md:top-[36%] lg:top-[41%]">
               <img className='w-[10%]' src={icon1} alt="" />
               <img className='w-[10%]' src={icon2} alt="" />
               <img className='w-[10%]' src={icon3} alt="" />
