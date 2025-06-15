@@ -55,7 +55,10 @@ const CombinedCard = ({...props}) => {
 
   return (
     <StyledWrapper>
-      <div className="flip-card w-[240%] h-[400px] sm:w-[160%] sm:h-[400px] md:w-[170%] md:h-[520px] lg:w-full lg:h-[520px]" onClick={handleClick}>
+      <div 
+        className="flip-card w-full max-w-[350px] h-[400px] sm:max-w-[300px] sm:h-[400px] md:max-w-[400px] md:h-[500px] lg:max-w-[500px] lg:h-[520px]"
+        onClick={handleClick}
+      >
         <div className={`flip-card-inner ${isFlipped ? 'flipped' : ''}`}>
           <div
             className="flip-card-front"
@@ -71,40 +74,46 @@ const CombinedCard = ({...props}) => {
             <div className="corner top-right" />
             <div className="corner bottom-right" />
             <div className="card-content flex flex-col items-center">
-              <img className='h-[400px] object-cover lg:md:sm:object-contain lg:md:sm:h-auto' src={props.image} alt="" />
-              <h1 className="text-4xl mt-[110%]  lg:md:sm:mt-[100%] sm:text-4xl md:text-5xl lg:text-5xl text-center absolute text-[#171717] z-4">{cardData?.title || 'لا يوجد عنوان'}</h1>
+              <img className='w-full h-full object-cover rounded-lg' src={props.image} alt="" />
+              <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl mt-[100%] text-center absolute text-[#171717] z-4">{cardData?.title || 'لا يوجد عنوان'}</h1>
             </div>
           </div>
           <div className="flip-card-back flex flex-col gap-5 pt-5">
-            <p className="text-[#F3EDCD] text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-center">{cardData?.title || 'لا يوجد عنوان'}</p>
+            <p className="text-[#F3EDCD] text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center">{cardData?.title || 'لا يوجد عنوان'}</p>
             <div className="w-full h-[4px] bg-[#F3EDCD]" />
-            <div className={`text-[14px] text-[#F3EDCD] sm:text-[13px] md:text-[15px] lg:text-[16px] font-medium ${cardData.id === 4 ? 'text-center text-[#F3EDCD]' : cardData.id === 5 ? 'text-start' : 'text-center text-[#F3EDCD]' } px-5`} style={{ fontFamily: 'Readex-Pro' }}>
-              {Array.isArray(cardData?.content) ? (
+            <div className={`text-[16px] sm:text-[16px] md:text-[16px] lg:text-[20px] px-2 md:px-4 text-[#F3EDCD] font-medium ${cardData.id === 5 ? 'text-start lg:md:grid lg:md:grid-cols-2' : 'text-center'}`}>
+              {Array.isArray(cardData?.content) && (cardData.id !== 5) ? (
                 cardData.content.map((line, idx) => (
-                  <p key={idx}>{line}</p>
+                  <p className='text-center' key={idx}>{line}</p>
                 ))
-              ) : (
-                <p className={`${cardData.id === 4 ? 'comingSoon font-bold text-[40px] text-[#F3EDCD] sm:text-[120px]/20 md:text-[150px]/25 lg:text-[170px]/30 mt-15' : 'text-[#F3EDCD]'}`}>
+              ) : Array.isArray(cardData?.content) && (cardData.id === 5) 
+              ? (
+                cardData.content.map((line, idx) => (
+                  <p className='text-start' key={idx}>{line}</p>
+                ))
+              ):(
+                <p className={`${cardData.id === 7 ? 'comingSoon text-center font-bold text-[40px] text-[#F3EDCD] sm:text-[120px]/20 md:text-[120px]/25 lg:text-[170px]/30 mt-15' : 'text-[#F3EDCD]'}`}>
                   {cardData?.content || 'لا يوجد محتوى'}
                 </p>
               )}
             </div>
             {cardData.author && <p className="text-[#F3EDCD] sm:text-2xl md:text-3xl lg:text-3xl text-center">"{cardData?.author}"</p>}
-            { (cardData.images) && (window.innerWidth >= 768) && (
-              <div dir='ltr' className="carousel h-[170px] flex justify-center mt-5">
+            {(cardData.images) && (window.innerWidth > 767) && (
+              <div dir='ltr' className="carousel h-[150px] sm:h-[120px] md:h-[160px] lg:h-[180px] flex justify-center items-center mt-5">
                 <button className="nav-btn left bg-[#F3EDCD] cursor-pointer hover:bg-[#dad5b8]" onClick={prevImage} aria-label="السابق">
                   <ChevronLeft />
                 </button>
                 <img
-                  className="carousel-image w-[80%] h-auto object-cover"
+                  className="carousel-image w-[70%] h-full object-cover"
                   src={cardData.images[carouselIndex]}
-                  alt={`صورة طبق ${carouselIndex + 1}`}
+                  alt={`صورة ${carouselIndex + 1}`}
                 />
                 <button className="nav-btn right bg-[#F3EDCD] cursor-pointer hover:bg-[#dad5b8]" onClick={nextImage} aria-label="التالي">
                   <ChevronRight />
                 </button>
               </div>
             )}
+
         </div>
         </div>
       </div>

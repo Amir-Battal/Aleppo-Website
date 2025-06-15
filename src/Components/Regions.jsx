@@ -63,7 +63,7 @@ const Regions = () => {
 
   return (
     <section id='regions' className='bg-[#777F53] flex items-center justify-center font-bold'>
-      <div dir='ltr' className='w-full flex flex-col-reverse lg:flex-row gap-10 justify-between px-4 sm:px-6 md:px-10 py-10 sm:py-16 md:py-20'>
+      <div dir='ltr' className='w-full flex flex-col-reverse lg:flex-row sm:gap-150 md:gap-170 lg:gap-10 justify-between px-4 sm:px-6 md:px-10 py-10 sm:py-16 md:py-20'>
         <div className='w-full lg:w-[60%]'>
           <Card region={selectedRegion} />
         </div>

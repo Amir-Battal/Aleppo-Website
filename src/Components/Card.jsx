@@ -57,52 +57,52 @@ const Card = ({ region }) => {
         <div className="content flex w-full ">
           {matchedRegionData && showContent ? (
             <div className='w-full flex flex-col gap-1'>
-              <img className='w-full h-[30%] object-cover' src={`${matchedRegionData.image}`} alt={region} />
+              <img className='w-full h-[28%] object-cover' src={`${matchedRegionData.image}`} alt={region} />
               <div className='flex flex-col'>
-                <h1 className='text-3xl md:text-5xl lg:text-6xl'>{matchedRegionData.title}</h1>
-                <p className='text-base md:text-lg lg:text-xl'>{matchedRegionData.location}</p>
+                <h1 className='text-4xl sm:text-5xl md:text-5xl lg:text-6xl'>{matchedRegionData.title}</h1>
+                <p className='text-[16px] sm:text-[20px] md:text-[25px] lg:text-xl'>{matchedRegionData.location}</p>
               </div>
 
               <div style={{ fontFamily: 'Readex-Pro' }} className='flex flex-col gap-5'>
                 <div className='flex flex-col gap-1'>
-                  <p className='text-[12px] md:text-[13px] lg:text-[13px] leading-6 font-semibold text-center'>
+                  <p className='text-[10px] sm:text-[14px] md:text-[14px] lg:text-[12px] leading-6 font-semibold text-center'>
                     {matchedRegionData.featured}
                   </p>
-                  <p className='text-[12px] md:text-[13px] lg:text-[13px] leading-6 font-semibold text-center'>
+                  <p className='text-[10px] sm:text-[14px] md:text-[14px] lg:text-[12px] leading-6 font-semibold text-center'>
                     {matchedRegionData.famous}
                   </p>
                 </div>
 
                 <div className='flex flex-col gap-5'>
                   <div className='flex flex-col gap-1'>
-                    <h3 className='text-center text-xl md:text-2xl'>المناطق الأثرية:</h3>
-                    <p className='text-[12px] md:text-[13px] lg:text-[13px] leading-[18px] font-semibold text-center'>
+                    <h3 className='text-center text-[20px] sm:text-2xl md:text-2xl lg:text-[24px]'>المناطق الأثرية:</h3>
+                    <p className='text-[10px] sm:text-[12px] md:text-[14px] lg:text-[12px] leading-[18px] font-semibold text-center'>
                       {matchedRegionData.archaeologicalSites}
                     </p>
                   </div>
 
                   <div className='w-full justify-evenly flex flex-row'>
                     <div className='flex flex-col w-[20%]'>
-                      <h3 className='text-center text-xl md:text-2xl'>المدن :</h3>
-                      <p className='text-[10px] md:text-[11px] lg:text-[10.5px] leading-6 text-center'>
+                      <h3 className='text-center text-[14px] sm:text-[18px] md:text-2xl lg:text-[24px]'>المدن :</h3>
+                      <p className='text-[8px] md:text-[11px] lg:text-[10px] leading-6 text-center'>
                         {matchedRegionData.managerUnits.cities.join(' - ')}
                       </p>
                     </div>
 
                     <div className='w-[1px] h-[150px] bg-black flex'></div>
 
-                    <div className='flex flex-col w-[38%]'>
-                      <h3 className='text-center text-xl md:text-2xl'>البلدات :</h3>
-                      <p className='text-[10px] md:text-[11px] lg:text-[10.5px] leading-6 text-center'>
+                    <div className='flex flex-col w-[40%]'>
+                      <h3 className='text-center text-[14px] sm:text-[18px] md:text-2xl lg:text-[24px]'>البلدات :</h3>
+                      <p className='text-[8px] md:text-[11px] lg:text-[10px] leading-6 text-center'>
                         {matchedRegionData.managerUnits.towns.join(' - ')}
                       </p>
                     </div>
 
                     <div className='w-[1px] h-[150px] bg-black'></div>
 
-                    <div className='flex flex-col w-[20%]'>
-                      <h3 className='text-center text-xl md:text-2xl'>البلديات :</h3>
-                      <p className='text-[10px] md:text-[11px] lg:text-[10.5px] leading-6 text-center'>
+                    <div className='flex flex-col w-[22%]'>
+                      <h3 className='text-center text-[14px] sm:text-[18px] md:text-2xl lg:text-[24px]'>البلديات :</h3>
+                      <p className='text-[8px] md:text-[11px] lg:text-[10px] leading-6 text-center'>
                         {matchedRegionData.managerUnits.municipalities.join(' - ')}
                       </p>
                     </div>

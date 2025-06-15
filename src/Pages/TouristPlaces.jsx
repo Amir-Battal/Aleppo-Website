@@ -138,13 +138,13 @@ const HorizontalAccordion = ({ data, title }) => {
                 color: place.textColor,
                 backgroundImage: isSelected ? `url(${place.image})` : "none",
                 backgroundSize: "cover",
-                backgroundPosition: "center",
+                backgroundPosition: place.id === 1 ? "start" : "center",
               }}
             >
               <h3
                 className={`font-bold absolute z-10 ${
                   isSelected
-                    ? "text-[40px] sm:text-[50px] md:text-[60px] lg:text-[80px] top-5 right-10 rotate-0 text-shadow-lg/20"
+                    ? "text-[20px] sm:text-[50px] md:text-[60px] lg:text-[80px] top-5 right-2 rotate-0 text-shadow-lg/20"
                     : "text-[20px] lg:md:sm:text-[30px] -rotate-90 w-[80vh] mt-[40vh] mr-[-38.5vh] sm:mr-[-37.2vh] md:mr-[-38vh] lg:mr-[-36.5vh]"
                 }`}
               >
@@ -237,7 +237,7 @@ const TouristPlaces = () => {
       <div className="w-full flex flex-row justify-between">
         <Link
           to={"/"}
-          className="sm:w-[40%] sm:h-[80px] md:w-[30%] md:h-[80px] lg:w-[19%] lg:h-[100px] px-5 flex flex-row gap-3 items-center bg-[#171717] text-[#F3EDCD] sm:text-2xl md:text-3xl lg:text-3xl hover:bg-[#efe598] hover:text-[#171717] cursor-pointer"
+          className="sm:w-[40%] sm:h-[80px] md:w-[30%] md:h-[80px] lg:w-[28%] lg:h-[100px] px-5 flex flex-row gap-3 items-center bg-[#171717] text-[#F3EDCD] sm:text-2xl md:text-3xl lg:text-3xl hover:bg-[#efe598] hover:text-[#171717] cursor-pointer"
         >
           <h3>العودة إلى الصفحة الرئيسية</h3>
           <ChevronLeft />

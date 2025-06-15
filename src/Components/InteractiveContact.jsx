@@ -114,8 +114,8 @@ const InteractiveContact = () => {
       </form>
 
       {/* الصورة التوضيحية */}
-      <div className='w-full flex justify-center z-0 absolute'>
-        <img className='lg:md:sm:w-[60%] w-[100%] mt-[80%] ml-[8%] sm:mt-[50%] md:mt-[30%] lg:mt-[-5%] lg:md:sm:ml-[-40%] absolute z-0' src={AleppoIllustration} alt="" />
+      <div className='w-full flex justify-center items-end h-[100%] z-0 absolute'>
+        <img className='sm:w-[65%] md:w-[65%] xl:lg:w-[60%] w-[120%] ml-[8%] sm:ml-[0%] lg:md:ml-[-40%] absolute z-0' src={AleppoIllustration} alt="" />
       </div>
     </section>
   );

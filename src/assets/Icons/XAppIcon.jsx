@@ -1,8 +1,7 @@
 const XAppIcon = () => {
 
   return (
-    <svg className="w-[300%] lg:md:sm:ml-0 mr-[-100%] lg:md:sm:w-[18%] fill-[#777F53]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg>
-  );
+    <svg className="w-[20px] sm:w-[20px] md:w-[22px] xl:lg:w-[30px] fill-[#777F53]" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="50px" height="50px"><path d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z"/></svg>  );
 };
 
 export default XAppIcon;

@@ -90,7 +90,7 @@ const GovernorTimeline = ({ data }) => {
                     <h4 className="font-bold text-md lg:md:sm:text-lg text-[#171717]">{gov.name}</h4>
                     <h4 className="font-bold text-md lg:md:sm:text-lg text-[#171717]">{gov.startDate} / {gov.endDate}</h4>
                     {gov.social && (
-                      <div className="flex flex-row justify-center gap-4 mt-2 text-[#777F53] text-[20px]">
+                      <div className="w-full flex flex-row justify-center items-center gap-4 mt-2 text-[#777F53] text-[20px]">
                         <a href={gov.social.instagram} target="_blank" rel="noreferrer">
                           <Instagram />
                         </a>
