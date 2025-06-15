@@ -48,7 +48,7 @@ const AleppoInLines = () => {
   }, [])
 
 
-  if(window.innerWidth <= 1280 && window.innerWidth >= 768) {
+  if(window.innerWidth < 1280 && window.innerWidth >= 768) {
     console.log("ipad");
   } else if(window.innerWidth <= 767) {
     console.log("mobile");
