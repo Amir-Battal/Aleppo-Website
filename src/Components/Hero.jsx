@@ -60,7 +60,7 @@ const Hero = () => {
   }, [])
 
   return (
-    <section ref={containerRef} className='h-screen w-full overflow-hidden relative'>
+    <section ref={containerRef} className='h-[1000px] w-full overflow-hidden relative'>
       <HomeNavbar />
       <div className='w-full h-screen flex items-center mt-[-5%] justify-start px-10 md:px-10'>
         <div
@@ -73,7 +73,7 @@ const Hero = () => {
           <div className='flex flex-col items-start'>
             <h1 className='text-[600px] sm:text-[600px] md:text-[600px] lg:text-[570px] mt-[-5%] sm:mt-[-350px] md:mt-[-350px] lg:mt-[-350px] text-[#171717]'>حــلــــــــــــــــــــــــــــــــــــــــــــــــــــــب</h1>
 
-            <div className="absolute flex flex-row justify-between w-[85%] mr-[10%] top-[33%] sm:top-[27%] md:top-[36%] lg:top-[41%]">
+            <div className="absolute flex flex-row justify-between w-[85%] mr-[10%] top-[31%] sm:top-[27%] md:top-[36%] lg:top-[41%]">
               <img className='w-[10%]' src={icon1} alt="" />
               <img className='w-[10%]' src={icon2} alt="" />
               <img className='w-[10%]' src={icon3} alt="" />
