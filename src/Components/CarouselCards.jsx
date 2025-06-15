@@ -84,6 +84,30 @@ const CarouselCards = () => {
     startAutoRotate();
   };
 
+  const handleTouchStart = (e) => {
+  if (e.touches.length === 1) {
+    setIsDragging(true);
+    startX.current = e.touches[0].clientX;
+    stopAutoRotate();
+    clearTimeout(pauseTimeoutRef.current);
+    isPausedRef.current = false;
+  }
+};
+
+const handleTouchMove = (e) => {
+  if (!isDragging || startX.current === null || e.touches.length !== 1) return;
+  const deltaX = e.touches[0].clientX - startX.current;
+  setRotation((prev) => prev + deltaX * 0.3);
+  startX.current = e.touches[0].clientX;
+};
+
+const handleTouchEnd = () => {
+  setIsDragging(false);
+  startX.current = null;
+  startAutoRotate();
+};
+
+
   return (
     <StyledWrapper>
       <div
@@ -93,6 +117,9 @@ const CarouselCards = () => {
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {touristPlace.map((place, index) => {
           const cardAngle = index * DEGREE_PER_CARD;
