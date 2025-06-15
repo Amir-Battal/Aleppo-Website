@@ -18,7 +18,7 @@ const Footer = () => {
   const isTourist = pathname === '/tourist-places';
 
   return (
-    <footer className='w-full sm:h-[450px] md:h-[300px] lg:h-[300px] bg-[#777F53] text-[#F3EDCD] flex flex-col gap-5 lg:md:sm:gap-0 px-5 lg:md:sm:px-20 pt-5'>
+    <footer className='w-full sm:h-[500px] md:h-[300px] lg:h-[300px] bg-[#777F53] text-[#F3EDCD] flex flex-col gap-5 lg:md:sm:gap-0 px-5 lg:md:sm:px-20 pt-5'>
       <div className='w-full flex flex-col gap-5 lg:md:sm:gap-0 sm:flex-col md:flex-row lg:flex-row justify-between'>
         <div className="w-full sm:w-full md:w-[80%] lg:w-[50%]">
           <h3 className="text-[30px]">أقسام الموقع</h3>
