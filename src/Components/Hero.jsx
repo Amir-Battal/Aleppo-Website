@@ -71,7 +71,7 @@ const Hero = () => {
           <h1 ref={textGovernorateRef} className='text-[150px] mt-80 text-[#171717] sm:text-[150px] md:text-[250px] lg:text-[300px]'>محافظة</h1>
 
           <div className='flex flex-col items-start'>
-            <h1 className='text-[400px] sm:text-[600px] md:text-[600px] lg:text-[570px] mt-[-5%] sm:mt-[-350px] md:mt-[-350px] lg:mt-[-350px] text-[#171717]'>حــلــــــــــــــــــــــــــــــــــــــــــــــــــــــب</h1>
+            <h1 className='text-[300px] sm:text-[600px] md:text-[600px] lg:text-[570px] mt-[-5%] sm:mt-[-350px] md:mt-[-350px] lg:mt-[-350px] text-[#171717]'>حــلــــــــــــــــــــــــــــــــــــــــــــــــــــــب</h1>
 
             <div className="absolute flex flex-row justify-between w-[85%] mr-[10%] top-[54%] sm:top-[27%] md:top-[36%] lg:top-[41%]">
               <img className='w-[10%]' src={icon1} alt="" />
