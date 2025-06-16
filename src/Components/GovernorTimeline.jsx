@@ -76,7 +76,7 @@ const GovernorTimeline = ({ data }) => {
                 )}
 
                 {/* البطاقة */}
-                {hoveredIndex === i && (
+                {hoveredIndex === i && (gov.name === "المهندس. عزام الغريــــب") && (
                   <div
                     className={`absolute w-25 lg:md:sm:w-64 bg-[#F3EDCD] shadow-2xl p-1 lg:md:sm:p-5 text-center z-50 animate-fadeIn border-2 border-[#777F53] ${
                       isEven ? "top-full mt-[-10%]" : "bottom-full mb-[-5%]"
