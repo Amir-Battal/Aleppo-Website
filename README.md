@@ -88,7 +88,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Amir-Battal/SHQD.git
+git clone https://github.com/Amir-Battal/Aleppo-Website.git
 cd shqd
 ```
 
