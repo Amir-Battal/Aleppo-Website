@@ -89,7 +89,7 @@
 
 ```bash
 git clone https://github.com/Amir-Battal/Aleppo-Website.git
-cd shqd
+cd aleppo-website
 ```
 
 ### 2. Setup Frontend
