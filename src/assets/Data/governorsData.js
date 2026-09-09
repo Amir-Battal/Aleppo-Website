@@ -11,7 +11,7 @@ const MuwafakKhalof = 'https://res.cloudinary.com/dqe36doqn/image/upload/v174986
 const MuhammadWahidAkkad = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867221/MuhammadWahidAkkad_rnhv31.jpg'
 const MarwanOlabi = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867219/MarwanOlabi_rhgvrc.jpg'
 const HussienDiab = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867219/HussienDiab_zqnrvz.jpg'
-const AzzamAlGharib = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867218/AzzamAlGharib_cwbnro.jpg'
+const AzzamAlGharib = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788950067/AzzamAlGharib.jpg'
 
 export const governorsData = [
   {

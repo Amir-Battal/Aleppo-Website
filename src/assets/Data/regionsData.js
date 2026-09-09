@@ -1,13 +1,13 @@
-const EfrinImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867757/efrin_ibyoqz.jpg';
-const AtarbImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867757/atarb_yywclb.png';
-const AzzazImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867795/azzaz_cotywg.jpg';
-const SamaanImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867794/samaan_efkids.png';
-const BabImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867762/bab_wcwo71.png';
-const DierHaferImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867810/dirHafer_fkmijr.png';
-const SafiraImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867771/safira_qgdcch.png';
-const JarablesImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867788/jarables_o0ofeu.png';
-const MenbagImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867794/menbag_ip3ggp.png';
-const EinArabImage = 'https://res.cloudinary.com/dqe36doqn/image/upload/v1749867766/einArab_uwndix.png';
+const EfrinImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949846/efrin.jpg';
+const AtarbImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949848/atarb.png';
+const AzzazImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949849/azzaz.jpg';
+const SamaanImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949852/samaan.png';
+const BabImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949846/bab.png';
+const DierHaferImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949849/dirHafer.png';
+const SafiraImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949847/safira.png';
+const JarablesImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949850/jarables.png';
+const MenbagImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949851/menbag.png';
+const EinArabImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949847/einArab.png';
 
 export const regionsData = [
   {
