@@ -1,13 +1,13 @@
-const EfrinImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949846/efrin.jpg';
-const AtarbImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949848/atarb.png';
-const AzzazImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949849/azzaz.jpg';
-const SamaanImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949852/samaan.png';
-const BabImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949846/bab.png';
-const DierHaferImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949849/dirHafer.png';
-const SafiraImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949847/safira.png';
-const JarablesImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949850/jarables.png';
-const MenbagImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949851/menbag.png';
-const EinArabImage = 'https://res.cloudinary.com/c9tptioy/image/upload/v1788949847/einArab.png';
+const EfrinImage = 'https://ik.imagekit.io/j9omozvmgf/efrin.jpg';
+const AtarbImage = 'https://ik.imagekit.io/j9omozvmgf/atarb.png';
+const AzzazImage = 'https://ik.imagekit.io/j9omozvmgf/azzaz.jpg';
+const SamaanImage = 'https://ik.imagekit.io/j9omozvmgf/samaan.png';
+const BabImage = 'https://ik.imagekit.io/j9omozvmgf/bab.png';
+const DierHaferImage = 'https://ik.imagekit.io/j9omozvmgf/dirHafer.png';
+const SafiraImage = 'https://ik.imagekit.io/j9omozvmgf/safira.png';
+const JarablesImage = 'https://ik.imagekit.io/j9omozvmgf/jarables.png';
+const MenbagImage = 'https://ik.imagekit.io/j9omozvmgf/menbag.png';
+const EinArabImage = 'https://ik.imagekit.io/j9omozvmgf/einArab.png';
 
 export const regionsData = [
   {
